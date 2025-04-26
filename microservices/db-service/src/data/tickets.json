@@ -1,0 +1,246 @@
+[
+  {
+    "created_at": 1745534175000,
+    "number": 850,
+    "estimated_wait_time": 5,
+    "service_tag": "deposit",
+    "service_id": 1,
+    "called_at": 1745534675528,
+    "counter_id": 1,
+    "served_at": 1745534795766
+  },
+  {
+    "created_at": 1745534184858,
+    "number": 789,
+    "estimated_wait_time": 22,
+    "service_tag": "shipping",
+    "service_id": 2,
+    "called_at": 1745534817866,
+    "counter_id": 1,
+    "served_at": 1745534824734
+  },
+  {
+    "created_at": 1745596712530,
+    "number": 271,
+    "estimated_wait_time": 2,
+    "service_tag": "shipping",
+    "service_id": 2,
+    "called_at": 1745596740137,
+    "counter_id": 1,
+    "served_at": 1745596744718
+  },
+  {
+    "created_at": 1745596722457,
+    "number": 238,
+    "estimated_wait_time": 2,
+    "service_tag": "deposit",
+    "service_id": 1,
+    "called_at": 1745596746966,
+    "counter_id": 1,
+    "served_at": 1745596749050
+  },
+  {
+    "created_at": 1745596729099,
+    "number": 59,
+    "estimated_wait_time": 12,
+    "service_tag": "shipping",
+    "service_id": 2,
+    "called_at": 1745596766986,
+    "counter_id": 1,
+    "served_at": 1745596768950
+  },
+  {
+    "created_at": 1745596726468,
+    "number": 952,
+    "estimated_wait_time": 5,
+    "service_tag": "deposit",
+    "service_id": 1,
+    "called_at": 1745596793989,
+    "counter_id": 1,
+    "served_at": 1745596798500
+  },
+  {
+    "created_at": 1745596730782,
+    "number": 322,
+    "estimated_wait_time": 22,
+    "service_tag": "shipping",
+    "service_id": 2,
+    "called_at": 1745596811851,
+    "counter_id": 1,
+    "served_at": 1745596814150
+  },
+  {
+    "counter_id": 1,
+    "served_at": 1745597240198
+  },
+  {
+    "created_at": 1745618315386,
+    "number": 796,
+    "estimated_wait_time": 5,
+    "service_tag": "deposit",
+    "service_id": 1,
+    "called_at": 1745618341066,
+    "counter_id": 2,
+    "served_at": 1745618347266
+  },
+  {
+    "created_at": 1745618328911,
+    "number": 367,
+    "estimated_wait_time": 7,
+    "service_tag": "deposit",
+    "service_id": 1,
+    "called_at": 1745618349948,
+    "counter_id": 2,
+    "served_at": 1745618356848
+  },
+  {
+    "created_at": 1745618321654,
+    "number": 475,
+    "estimated_wait_time": 2,
+    "service_tag": "account",
+    "service_id": 3,
+    "called_at": 1745618343883,
+    "counter_id": 3,
+    "served_at": 1745618364248
+  },
+  {
+    "created_at": 1745618322211,
+    "number": 694,
+    "estimated_wait_time": 9,
+    "service_tag": "account",
+    "service_id": 3,
+    "called_at": 1745618365963,
+    "counter_id": 3,
+    "served_at": 1745618367399
+  },
+  {
+    "created_at": 1745618311553,
+    "number": 642,
+    "estimated_wait_time": 2,
+    "service_tag": "deposit",
+    "service_id": 1,
+    "called_at": 1745618337877,
+    "counter_id": 1,
+    "served_at": 1745618369132
+  },
+  {
+    "created_at": 1745618317789,
+    "number": 486,
+    "estimated_wait_time": 2,
+    "service_tag": "shipping",
+    "service_id": 2,
+    "called_at": 1745618370198,
+    "counter_id": 1,
+    "served_at": 1745618372299
+  },
+  {
+    "created_at": 1745618332265,
+    "number": 317,
+    "estimated_wait_time": 16,
+    "service_tag": "account",
+    "service_id": 3,
+    "called_at": 1745618438153,
+    "counter_id": 3,
+    "served_at": 1745618439932
+  },
+  {
+    "created_at": 1745618319312,
+    "number": 254,
+    "estimated_wait_time": 12,
+    "service_tag": "shipping",
+    "service_id": 2,
+    "called_at": 1745618432200,
+    "counter_id": 1,
+    "served_at": 1745618447032
+  },
+  {
+    "created_at": 1745618324997,
+    "number": 354,
+    "estimated_wait_time": 22,
+    "service_tag": "shipping",
+    "service_id": 2,
+    "called_at": 1745618448480,
+    "counter_id": 1,
+    "served_at": 1745618458799
+  },
+  {
+    "created_at": 1745618722398,
+    "number": 923,
+    "estimated_wait_time": 2,
+    "service_tag": "deposit",
+    "service_id": 1,
+    "called_at": 1745618744584,
+    "counter_id": 1,
+    "served_at": 1745618747861
+  },
+  {
+    "created_at": 1745618726960,
+    "number": 535,
+    "estimated_wait_time": 5,
+    "service_tag": "deposit",
+    "service_id": 1,
+    "called_at": 1745618749665,
+    "counter_id": 2,
+    "served_at": 1745618750660
+  },
+  {
+    "created_at": 1745618730818,
+    "number": 698,
+    "estimated_wait_time": 2,
+    "service_tag": "account",
+    "service_id": 3,
+    "called_at": 1745618752362,
+    "counter_id": 3,
+    "served_at": 1745618754927
+  },
+  {
+    "created_at": 1745618736290,
+    "number": 802,
+    "estimated_wait_time": 9,
+    "service_tag": "account",
+    "service_id": 3,
+    "called_at": 1745618762362,
+    "counter_id": 3,
+    "served_at": 1745618763661
+  },
+  {
+    "created_at": 1745618734415,
+    "number": 541,
+    "estimated_wait_time": 7,
+    "service_tag": "deposit",
+    "service_id": 1,
+    "called_at": 1745618760880,
+    "counter_id": 2,
+    "served_at": 1745618764926
+  },
+  {
+    "created_at": 1745618724860,
+    "number": 648,
+    "estimated_wait_time": 2,
+    "service_tag": "shipping",
+    "service_id": 2,
+    "called_at": 1745618758896,
+    "counter_id": 1,
+    "served_at": 1745618766359
+  },
+  {
+    "created_at": 1745618728947,
+    "number": 65,
+    "estimated_wait_time": 12,
+    "service_tag": "shipping",
+    "service_id": 2,
+    "called_at": 1745618772805,
+    "counter_id": 1,
+    "served_at": 1745618792843
+  },
+  {
+    "created_at": 1745618737926,
+    "number": 469,
+    "estimated_wait_time": 22,
+    "service_tag": "shipping",
+    "service_id": 2,
+    "called_at": 1745618793862,
+    "counter_id": 1,
+    "served_at": 1745618794926
+  }
+]

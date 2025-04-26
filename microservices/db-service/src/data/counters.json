@@ -1,0 +1,18 @@
+[
+    {
+      "id": 1,
+      "label": "Counter 1",
+      "services": [1, 2]  
+    },
+    {
+      "id": 2,
+      "label": "Counter 2",
+      "services": [1]
+    },
+    {
+      "id": 3,
+      "label": "Counter 3",
+      "services": [3]
+    }
+]
+  

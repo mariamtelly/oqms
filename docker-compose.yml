@@ -1,0 +1,59 @@
+version: '3.9'
+
+services:
+  rabbitmq:
+    image: rabbitmq:3-management
+    ports:
+      - "5672:5672"
+      - "15672:15672"
+    environment:
+      RABBITMQ_DEFAULT_USER: guest
+      RABBITMQ_DEFAULT_PASS: guest
+
+  db-service:
+    build: ./microservices/db-service
+    ports:
+      - "8004:8004"
+    environment:
+      - PORT=8004
+    volumes:
+      - ./microservices/db-service/src/data:/app/src/data
+
+  queue-service:
+    build: ./microservices/queue-service
+    ports:
+      - "8003:8003"
+    environment:
+      - PORT=8003
+      - RABBITMQ_URL=amqp://guest:guest@rabbitmq:5672
+      - DB_SERVICE_URL=http://db-service:8004
+
+  ticket-service:
+    build: ./microservices/ticket-service
+    ports:
+      - "8002:8002"
+    environment:
+      - PORT=8002
+      - QUEUE_SERVICE_URL=http://queue-service:8003
+      - DB_SERVICE_URL=http://db-service:8004
+
+  gateway:
+    build: ./microservices/gateway
+    ports:
+      - "8001:8001"
+    environment:
+      - PORT=8001
+      - DB_SERVICE_URL=http://db-service:8004
+      - TICKET_SERVICE_URL=http://ticket-service:8002
+      - QUEUE_SERVICE_URL=http://queue-service:8003
+
+  ui-agent:
+    build: ./office-ui/ui-agent
+    ports:
+      - "5173:5173"
+    
+  ui-client:
+    build: ./office-ui/ui-client
+    ports:
+      - "5174:5174"
+    

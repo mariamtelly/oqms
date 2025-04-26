@@ -1,0 +1,20 @@
+[
+    {
+      "id": 1,
+      "name": "Deposit",
+      "tag": "deposit",
+      "service_time": 5
+    },
+    {
+      "id": 2,
+      "name": "Shipping",
+      "tag": "shipping",
+      "service_time": 10
+    },
+    {
+      "id": 3,
+      "name": "Account Management",
+      "tag": "account",
+      "service_time": 7
+    }
+]  

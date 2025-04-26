@@ -21,14 +21,6 @@ Le projet se compose de :
 | **UI Client**       | Interface pour les clients finaux |
 | **UI Agent**        | Interface pour les agents de guichets |
 
-## 📈 Schéma de l'architecture
-
-+-----------+ +-----------+ +-----------+ | UI Client| ----> | Gateway | -----> | Ticket Svc| +-----------+ +-----------+ +-----------+ | v +-----------+ | Queue Svc | +-----------+ | +----------------------+ | +-----------+ | RabbitMQ | +-----------+
-
-Agent side:
-
-+-----------+ +-----------+ | UI Agent | ----> | Gateway | +-----------+ +-----------+
-
 
 ## 🛠️ Stack Technique
 
@@ -48,3 +40,28 @@ Agent side:
    ```bash
    git clone <URL_DU_REPO>
    cd oqms
+2. **Construisez les images docker** :
+   ```bash
+   docker-compose build
+4. **Démarrez les services** :
+   ```bash
+   docker-compose up
+6. **Redémarrez queue-service si nécessaire** :
+   ```bash
+   docker-compose restart queue-service
+8. **Accéder aux interfaces** :
+- **UI Client** : [http://localhost:5174](http://localhost:5174)
+- **UI Agent** : [http://localhost:5173](http://localhost:5173)
+- **RabbitMQ Management** : [http://localhost:15672](http://localhost:15672)  
+  *(Utilisateur : `guest`, Mot de passe : `guest`)*
+
+---
+
+## ⚙️ Points techniques importants
+
+- **RabbitMQ** est utilisé pour créer dynamiquement des queues par service (`deposit`, `shipping`, `account_management`, etc.).
+- **Les queues** sont créées automatiquement lors de la première demande d’un ticket.
+- **Le temps d'attente** est calculé en fonction du nombre de clients en file et du temps de service moyen par guichet.
+- **Les agents** récupèrent dynamiquement les tickets selon les files de service qu'ils peuvent prendre en charge.
+
+---

@@ -2,7 +2,7 @@
 
 ## 🚀 Présentation
 
-**OQMS** est un système ultra simplifié de gestion de files d’attente pour agences.  
+**OQMS** est un système simplifié de gestion de files d’attente pour agences.  
 Il repose sur une architecture **microservices** orchestrée avec **Docker Compose**, avec une communication **RabbitMQ** pour la gestion des tickets.
 
 Le projet se compose de :
